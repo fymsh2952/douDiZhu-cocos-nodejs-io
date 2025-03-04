@@ -746,9 +746,6 @@ export class BattleManager extends Component {
     }
     let actor0 = this.actors[0];//第一个进入房间的玩家先叫地主，其他玩家可以看到第一个玩家正在叫地主的状态逻辑
     let index = this.getLocalIndex(actor0.scoreIndex, mySeataIndex, 3);
-
-
-    
     switch (index) {
       case 0:
         let aaa = this.nodeActors[0].getChildByName("Node_chuPoker")

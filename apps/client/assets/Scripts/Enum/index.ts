@@ -10,3 +10,5 @@ export enum EventEnum {
 }
 
 
+// git config --global user.name "方圆"
+// git config --global user.email "fangyuan@bupt.edu.cn"

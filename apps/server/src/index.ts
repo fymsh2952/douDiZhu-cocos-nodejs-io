@@ -1,7 +1,7 @@
 import { Connection, MyServer, MyServerEventEnum } from "./Core"
 import PlayerManager from "./biz/PlayerManager"
 import RoomManager from "./biz/RoomManager"
-import { getTime, symlinkCommon } from "./utils"
+import { copyCommon, getTime, symlinkCommon } from "./utils"
 import {
   ApiMsgEnum,
   IApiGameEndReq,
@@ -165,6 +165,7 @@ server
   .start()
   .then(() => {
     symlinkCommon()
+    // copyCommon()
     console.log("服务启动！")
   })
   .catch((e) => {

@@ -17,7 +17,6 @@ export class BattleManager extends Component {
   @property(Prefab) pokerPrefab: Prefab = null//牌预制体
   @property(Node) node_3Poker: Node = null;//3张底牌节点
 
-
   @property(Button) butnChuPoker: Button = null;
   @property(Button) butnBuChuPoker: Button = null;
   @property(Button) butnJiaBei: Button = null;
@@ -46,10 +45,6 @@ export class BattleManager extends Component {
     this.clearGame();
     //资源加载和网络连接同步执行
     await Promise.all([this.connectServer()]);
-
-    // this.nodeActors.forEach((actor) => {
-    //   actor.active = false;
-    // })
     NetworkManager.Instance.listenMsg(ApiMsgEnum.MsgServerSync, this.listenServerSync, this);
     NetworkManager.Instance.listenMsg(ApiMsgEnum.MsgGameEnd, this.listenGameEnd, this);
     NetworkManager.Instance.listenMsg(ApiMsgEnum.MsgJiaoDiZhu, this.listenJiaoDiZhu, this);
@@ -748,7 +743,7 @@ export class BattleManager extends Component {
     let index = this.getLocalIndex(actor0.scoreIndex, mySeataIndex, 3);
     switch (index) {
       case 0:
-        let aaa = this.nodeActors[0].getChildByName("Node_chuPoker")
+        let aaa = this.nodeActors[0].getChildByName("Node_chuPoker")//  https://sucai.redocn.com/13497467.html
         chuPokerSet.forEach((poker,j) => {
           this.deskPokerSet.push(poker)
           poker.parent = aaa

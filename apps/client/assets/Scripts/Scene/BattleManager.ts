@@ -751,6 +751,8 @@ export class BattleManager extends Component {
         })
         chuPokerSet.length = 0
         break;
+
+        
       case 1:
         let bbb = this.nodeActors[1].getChildByName("Node_chuPoker")
         chuPokerSet.forEach((poker) => {
@@ -758,7 +760,7 @@ export class BattleManager extends Component {
         })
         break;
       case 2:
-        let ccc = this.nodeActors[0].getChildByName("Node_chuPoker")
+        let ccc = this.nodeActors[0].getChildByName("Node_chuPoker")//   https://gitee.com/fy_2_1/doudizhu-cangku.git
         chuPokerSet.forEach((poker) => {
           poker.parent = ccc
         })
@@ -773,6 +775,16 @@ export class BattleManager extends Component {
     console.log("不出牌");
   }
 
+
+
+
+// gitee用户名 aaa aaa2_952  密码：00112233Aa￥
+// 私人令牌： aaa2_952         551c5f7a4a862e11a47087cb5b7eee48
+
+//   https://gitee.com/fy_2_1/doudizhu-cangku.git
+
+
+ 
 
 
 

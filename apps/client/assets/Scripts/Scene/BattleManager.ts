@@ -776,7 +776,8 @@ export class BattleManager extends Component {
   }
 
 
-
+// git config --global user.name "方圆" 
+// git config --global user.email "fangyuan@bupt.edu.cn"
 
 // gitee用户名 aaa aaa2_952  密码：00112233Aa￥
 // 私人令牌： aaa2_952         551c5f7a4a862e11a47087cb5b7eee48
@@ -784,7 +785,46 @@ export class BattleManager extends Component {
 //   https://gitee.com/fy_2_1/doudizhu-cangku.git
 
 
- 
+ /**
+  * 以下是各种情况下常用的Git命令：
+
+开始一个工作区（另见：git help tutorial）
+clone 将一个仓库克隆到一个新目录
+init 创建一个空的Git仓库或重新初始化一个现有的仓库
+
+在当前更改上工作（另见：git help everyday）
+    add 将文件内容添加到索引中
+    mv 移动或重命名文件、目录或符号链接
+    restore 恢复工作树文件
+    rm 从工作树和索引中删除文件
+
+检查历史和状态（另见：git help revisions）
+    bisect 使用二分查找来找到引入错误的提交
+    diff 显示提交之间的更改、提交和工作树等之间的更改
+    grep 打印与模式匹配的行
+    log 显示提交日志
+    show 显示各种类型的对象
+    status 显示工作树状态
+
+增长、标记和调整你的常用历史
+    backfill 下载部分克隆中缺失的对象
+    branch 列出、创建或删除分支
+    commit 记录对仓库的更改
+    merge 将两个或多个开发历史合并在一起
+    rebase 在另一个基础提示上重新应用提交
+    reset 将当前HEAD重置为指定状态
+    switch 切换分支
+    tag 创建、列出、删除或验证用GPG签名的标签对象
+
+协作（另见：git help workflows）
+    fetch 从另一个仓库下载对象和引用
+    pull 从另一个仓库或本地分支获取并集成
+    push 更新远程引用以及相关的对象
+
+'git help -a' 和 'git help -g' 列出可用的子命令和一些概念指南。
+有关特定子命令或概念的详细信息，请参阅 'git help <command>' 或 'git help <concept>'。
+有关系统的概述，请参阅 'git help git'。
+  */
 
 
 

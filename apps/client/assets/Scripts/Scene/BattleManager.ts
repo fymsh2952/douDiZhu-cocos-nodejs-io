@@ -779,6 +779,9 @@ export class BattleManager extends Component {
 // git config --global user.name "方圆" 
 // git config --global user.email "fangyuan@bupt.edu.cn"
 
+// git config --global user.name 'aaa' 
+// git config --global user.email '24158353@qq.com'
+
 // gitee用户名 aaa aaa2_952  密码：00112233Aa￥
 // 私人令牌： aaa2_952         551c5f7a4a862e11a47087cb5b7eee48
 
@@ -789,8 +792,8 @@ export class BattleManager extends Component {
   * 以下是各种情况下常用的Git命令：
 
 开始一个工作区（另见：git help tutorial）
-clone 将一个仓库克隆到一个新目录
-init 创建一个空的Git仓库或重新初始化一个现有的仓库
+    clone 将一个仓库克隆到一个新目录
+    init 创建一个空的Git仓库或重新初始化一个现有的仓库
 
 在当前更改上工作（另见：git help everyday）
     add 将文件内容添加到索引中
